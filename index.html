@@ -4,15 +4,18 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    <script src="https://cdn.jsdelivr.net/momentjs/2.12.0/moment.min.js"></script>
-
+    <!-- // Bootstrap -->
     <link
       rel="stylesheet"
       href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
     />
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+    <!-- // Firebase -->
     <script src="https://www.gstatic.com/firebasejs/4.12.0/firebase.js"></script>
+    <!-- //Moment js  -->
+    <script src="https://cdn.jsdelivr.net/momentjs/2.12.0/moment.min.js"></script>
+
     <link rel="stylesheet" href="./assests/styles/reset.css" />
     <link rel="stylesheet" href="./assests/styles/styles.css" />
     <title>Document</title>
@@ -39,10 +42,9 @@
                   <tr>
                     <th scope="col">Train Name</th>
                     <th scope="col">Destination</th>
-                    <th scope="col">Frequency(minutes)</th>
+                    <th scope="col">Frequency (minutes)</th>
                     <th scope="col">Next arrival</th>
                     <th scope="col">Minutes away</th>
-                    <!-- <th scope="col">Total Billed ($)</th> -->
                   </tr>
                 </thead>
                 <tbody></tbody>
@@ -69,8 +71,12 @@
                   />
                 </div>
                 <div class="form-group">
-                  <label for="ddestination-input">Destination</label>
-                  <input class="form-control" id="role-input" type="text" />
+                  <label for="destination-input">Destination</label>
+                  <input
+                    class="form-control"
+                    id="destination-input"
+                    type="text"
+                  />
                 </div>
                 <div class="form-group">
                   <label for="first-train-input"
