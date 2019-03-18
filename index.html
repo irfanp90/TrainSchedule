@@ -15,16 +15,17 @@
     <script src="https://www.gstatic.com/firebasejs/4.12.0/firebase.js"></script>
     <!-- //Moment js  -->
     <script src="https://cdn.jsdelivr.net/momentjs/2.12.0/moment.min.js"></script>
-
+    <link
+      href="https://fonts.googleapis.com/css?family=Permanent+Marker"
+      rel="stylesheet"
+    />
     <link rel="stylesheet" href="./assests/styles/reset.css" />
     <link rel="stylesheet" href="./assests/styles/styles.css" />
     <title>Document</title>
   </head>
   <body>
-    <!-- Employee Tracker -->
     <div class="container">
-      <!-- Jumbotron -->
-      <div class="jumbotron" style="background-color: black; color: white">
+      <div class="jumbotron">
         <h1 class="text-center">TRAIN SCHEDULE</h1>
         <h3 class="text-center">
           Welcome to Coding Transit Authority
@@ -33,13 +34,12 @@
 
       <div class="row">
         <div class="col-md-12">
-          <!-- Train Schedule board -->
           <div class="card mb-4">
             <div class="card-header">CURRENT TRAIN SCHEDULE</div>
             <div class="card-body">
               <table class="table table-sm table-hover" id="schedule-table">
                 <thead>
-                  <tr>
+                  <tr class="info">
                     <th scope="col">Train Name</th>
                     <th scope="col">Destination</th>
                     <th scope="col">Frequency (minutes)</th>
@@ -56,11 +56,9 @@
 
       <div class="row">
         <div class="col-md-12">
-          <!-- Add Train  -->
           <div class="card mb-4">
             <div class="card-header">ADD TRAIN</div>
             <div class="card-body">
-              <!-- Entry Form -->
               <form>
                 <div class="form-group">
                   <label for="train-name-input">Train Name</label>
@@ -96,7 +94,7 @@
                     type="text"
                   />
                 </div>
-                <button class="btn btn-primary float-right" id="add-train-btn">
+                <button class="btn btn-primary" id="add-train-btn">
                   Submit
                 </button>
               </form>
